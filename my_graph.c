@@ -1,3 +1,4 @@
+// 207404997
 #include <stdio.h>
 #include "my_mat.h"
 #include "my_mat.c"
@@ -11,7 +12,13 @@ int main(){
     };
     int matrix[N][N], D[N][N], P[N][N];
     char input;
-    printf("choose:\nA) input new matrix\nB) check if path exists\nC) find shortest path\nD or EOF) quit\nF) demo\nnode numbers are 0-9\n");
+    printf("choose:");
+    printf("\nA) input new matrix");
+    printf("\nB) check if path exists");
+    printf("\nC) find shortest path");
+    printf("\nD or EOF) quit");
+    printf("\nF) demo matrix");
+    printf("\nnode numbers are 0-9\n");
     while (true){
         printf("input: ");
         scanf(" %c", &input);
