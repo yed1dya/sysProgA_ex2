@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-void floydWarshall(int W[][N], int D[][N], int P[][N]){
+void floydWarshall(int W[N][N], int D[N][N], int P[N][N]){
     for(int i=0; i<N; i++) {
         for (int j = 0; j < N; j++) {
             printf("%d ", W[i][j]);
@@ -44,7 +44,7 @@ void floydWarshall(int W[][N], int D[][N], int P[][N]){
     }
 }
 
-void inputValues(int matrix[][N]){
+void inputValues(int matrix[N][N]){
     int input;
     for(int i=0; i<N; i++){
         for(int j=i; j<N; j++){
@@ -56,7 +56,7 @@ void inputValues(int matrix[][N]){
     }
 }
 
-void existsPath(int D[][N]){
+void existsPath(int D[N][N]){
     int i, j;
     printf("enter source node: ");
     scanf("%d", &i);
@@ -66,7 +66,7 @@ void existsPath(int D[][N]){
     printf("%s", D[i][j]>0 ? "True\n\n" : "False\n\n");
 }
 
-void printPath(int P[][N], int i, int j){
+void printPath(int P[N][N], int i, int j){
     if(i == j) printf("%d ", i);
     else if(P[i][j] == -1) printf("no path");
     else{
@@ -75,7 +75,7 @@ void printPath(int P[][N], int i, int j){
     }
 }
 
-void shortestPath(int P[][N]){
+void shortestPath(int P[N][N]){
     int i, j;
     printf("enter source node: ");
     scanf("%d", &i);
@@ -86,7 +86,7 @@ void shortestPath(int P[][N]){
     printf("\n");
 }
 
-void autoLoad(int matrix[][N], int source[][N]){
+void autoLoad(int matrix[N][N], int source[N][N]){
     for(int i=0; i<N; i++) {
         for (int j = 0; j < N; j++) {
             matrix[i][j] = source[i][j];
