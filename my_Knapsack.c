@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#define MAX_WEIGHT 15
-#define ITEMS 6
+#define MAX_WEIGHT 20
+#define ITEMS 5
 
 int max(int a, int b) {
     if(a>b) return a;
@@ -41,7 +41,7 @@ int knapSack(int weights[], int values[], int selected_bool[]){
         }
         printf("\n");
     }
-    int i = ITEMS, j = MAX_WEIGHT, sum = 0;
+    int i = ITEMS, j = MAX_WEIGHT;
     while(i>0 && j>=0){
         if(dp[i-1][j] != dp[i][j]){
             selected_bool[i-1] = 1;
