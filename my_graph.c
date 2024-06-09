@@ -4,23 +4,23 @@
 #include "my_mat.c"
 
 int main(){
-    int testCase1[N][N] = {
+    /*int testCase1[N][N] = {
             {0,1,0,4},
             {1,0,1,0},
             {0,1,0,1},
             {4,0,1,0}
-    };
+    };*/
     int matrix[N][N], D[N][N], P[N][N];
     char input;
-    printf("choose:");
+    /*printf("choose:");
     printf("\nA) input new matrix");
     printf("\nB) check if path exists");
     printf("\nC) find shortest path");
     printf("\nD or EOF) quit");
     printf("\nF) demo matrix");
-    printf("\nnode numbers are 0-9\n");
+    printf("\nnode numbers are 0-9\n");*/
     while (true){
-        printf("input: ");
+        //printf("input: ");
         scanf(" %c", &input);
         if(input == 'E'){
             scanf("%c", &input);
@@ -30,7 +30,7 @@ int main(){
             }
         }
         if(input == 'D'){
-            printf("goodbye\n");
+            //printf("goodbye\n");
             break;
         }
         if(input == 'A'){
@@ -48,4 +48,5 @@ int main(){
             floydWarshall(matrix, D, P);
         }
     }
+    return 0;
 }
