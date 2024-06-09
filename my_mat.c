@@ -63,7 +63,7 @@ void existsPath(int D[N][N]){
     //printf("enter target node: ");
     scanf("%d", &j);
     if(i==j) printf("True");
-    printf("%s", D[i][j]>0 ? "True\n\n" : "False\n\n");
+    printf("%s", D[i][j]>0 ? "True" : "False");
 }
 
 void printPath(int P[N][N], int i, int j){
