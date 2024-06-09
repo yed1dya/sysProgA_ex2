@@ -41,7 +41,7 @@ int main(){
             existsPath(D);
         }
         if(input == 'C'){
-            shortestPath(P);
+            shortestPath(D);
         }
         if(input == 'F'){
             autoLoad(matrix, testCase1);
