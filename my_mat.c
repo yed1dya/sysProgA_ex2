@@ -65,12 +65,17 @@ void existsPath(int D[N][N]){
 }
 
 void printPath(int P[N][N], int i, int j){
-    if(i == j) printf("%d ", i);
+    /*if(i == j) printf("%d ", i);
     else if(P[i][j] == -1) printf("no path");
     else{
         printPath(P, i, P[i][j]);
         printf("%d ", j);
+    }*/
+    if (P[i][j] != 0){
+        printf("%d\n", P[i][j]);
     }
+    else printf("-1\n");
+    return 0;
 }
 
 void shortestPath(int P[N][N]){
