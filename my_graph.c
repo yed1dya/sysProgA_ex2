@@ -4,12 +4,12 @@
 #include "my_mat.c"
 
 int main(){
-    /*int testCase1[N][N] = {
+    int testCase1[N][N] = {
             {0,1,0,4},
             {1,0,1,0},
             {0,1,0,1},
             {4,0,1,0}
-    };*/
+    };
     int matrix[N][N], D[N][N], P[N][N];
     char input;
     /*printf("choose:");
