@@ -67,6 +67,11 @@ int main(){
         scanf("%d", &weights[i]);
     }
     int m = knapSack(weights, values, bool);
+    printf("Maximum value: %d\n", m);
+    int count = 0;
+    for(int i=0; i<ITEMS; i++){
+        if(bool[i]==1) count++;
+    }
     char*ans[count];
     int j = 0;
     for(int i=0; i<ITEMS; i++){
@@ -75,10 +80,5 @@ int main(){
     printf("Selected items:");
     for(int i=0; i<j; i++){
         printf(" %s",ans[i]);
-    }
-    printf("Maximum value: %d\n", m);
-    int count = 0;
-    for(int i=0; i<ITEMS; i++){
-        if(bool[i]==1) count++;
     }
 }
