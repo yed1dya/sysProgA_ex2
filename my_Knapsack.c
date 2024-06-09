@@ -55,7 +55,7 @@ int knapSack(int weights[], int values[], int selected_bool[]){
 int main(){
     int weights[ITEMS];
     int values[ITEMS];
-    char*items[ITEMS];
+    char *items[ITEMS];
     int bool[ITEMS]={0};
     for(int i=0; i<ITEMS; i++){
         items[i] = (char *)malloc(100 * sizeof(char));
@@ -81,5 +81,5 @@ int main(){
     for(int i=0; i<j-1; i++){
         printf(" %s",ans[i]);
     }
-    printf(" %s",ans[j-1]);
+    return 0;
 }
