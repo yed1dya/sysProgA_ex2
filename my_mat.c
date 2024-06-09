@@ -11,14 +11,14 @@ void floydWarshall(int W[N][N], int D[N][N], int P[N][N]){
         }
         //printf("\n");
     }
-    //printf("\n");
+    /*printf("\n");
     for(int i=0; i<N; i++) {
         for (int j = 0; j < N; j++) {
-            //printf("%d ", P[i][j]);
+            printf("%d ", P[i][j]);
         }
-       // printf("\n");
+       printf("\n");
     }
-    //printf("\n");
+    printf("\n");*/
     for(int k=0; k<N; k++){
         for(int i=0; i<N; i++){
             for(int j=0; j<N; j++){
@@ -29,7 +29,7 @@ void floydWarshall(int W[N][N], int D[N][N], int P[N][N]){
             }
         }
     }
-    /*for(int i=0; i<N; i++) {
+    for(int i=0; i<N; i++) {
         for (int j = 0; j < N; j++) {
             printf("%d ", D[i][j]);
         }
@@ -41,7 +41,7 @@ void floydWarshall(int W[N][N], int D[N][N], int P[N][N]){
             printf("%d ", P[i][j]);
         }
         printf("\n");
-    }*/
+    }
 }
 
 void inputValues(int matrix[N][N]){
