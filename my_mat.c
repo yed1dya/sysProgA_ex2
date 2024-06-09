@@ -47,11 +47,9 @@ void floydWarshall(int W[N][N], int D[N][N], int P[N][N]){
 void inputValues(int matrix[N][N]){
     int input;
     for(int i=0; i<N; i++){
-        for(int j=i; j<N; j++){
+        for(int j=0; j<N; j++){
             //printf("edge (%d, %d): ", i, j);
-            scanf("%d", &input);
-            matrix[i][j] = input;
-            matrix[j][i] = input;
+            scanf("%d", &matrix[i][j]);
         }
     }
 }
