@@ -48,7 +48,7 @@ void inputValues(int matrix[N][N]){
     int input;
     for(int i=0; i<N; i++){
         for(int j=i; j<N; j++){
-            printf("edge (%d, %d): ", i, j);
+            //printf("edge (%d, %d): ", i, j);
             scanf("%d", &input);
             matrix[i][j] = input;
             matrix[j][i] = input;
@@ -58,9 +58,9 @@ void inputValues(int matrix[N][N]){
 
 void existsPath(int D[N][N]){
     int i, j;
-    printf("enter source node: ");
+    //printf("enter source node: ");
     scanf("%d", &i);
-    printf("enter target node: ");
+    //printf("enter target node: ");
     scanf("%d", &j);
     if(i==j) printf("True");
     printf("%s", D[i][j]>0 ? "True\n\n" : "False\n\n");
@@ -77,13 +77,13 @@ void printPath(int P[N][N], int i, int j){
 
 void shortestPath(int P[N][N]){
     int i, j;
-    printf("enter source node: ");
+    //printf("enter source node: ");
     scanf("%d", &i);
-    printf("enter target node: ");
+    //printf("enter target node: ");
     scanf("%d", &j);
-    if(i==j) printf("same node");
+    //if(i==j) printf("same node");
     printPath(P, i, j);
-    printf("\n");
+    //printf("\n");
 }
 
 void autoLoad(int matrix[N][N], int source[N][N]){
