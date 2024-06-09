@@ -78,8 +78,7 @@ int main(){
         if(bool[i]==1) ans[j++] = items[i];
     }
     printf("Selected items:");
-    for(int i=0; i<j-1; i++){
+    for(int i=0; i<j; i++){
         printf(" %s",ans[i]);
     }
-    return 0;
 }
