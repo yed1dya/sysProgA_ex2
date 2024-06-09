@@ -77,7 +77,7 @@ int main(){
     for(int i=0; i<ITEMS; i++){
         if(bool[i]==1) ans[j++] = items[i];
     }
-    printf("Items that give the maximum profit:");
+    printf("Selected items:");
     for(int i=0; i<j; i++){
         printf(" %s ",ans[i]);
     }
