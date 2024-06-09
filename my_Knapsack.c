@@ -79,6 +79,6 @@ int main(){
     }
     printf("Selected items:");
     for(int i=0; i<j; i++){
-        printf(" %s ",ans[i]);
+        printf(" %s",ans[i]);
     }
 }
