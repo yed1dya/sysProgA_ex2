@@ -58,7 +58,7 @@ int main(){
     char *items[ITEMS];
     int bool[ITEMS]={0};
     for(int i=0; i<ITEMS; i++){
-        items[i] = (char *)malloc(100 * sizeof(char));
+        //items[i] = (char *)malloc(100 * sizeof(char));
         //printf("enter name for item %d: ",i+1);
         scanf("%s", items[i]);
         //printf("enter value for item %d: ",i+1);
