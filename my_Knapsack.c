@@ -60,7 +60,7 @@ int main(){
     for(int i=0; i<ITEMS; i++){
         //items[i] = (char *)malloc(100 * sizeof(char));
         //printf("enter name for item %d: ",i+1);
-        scanf("%s", items[i]);
+        scanf("%s", &items[i]);
         //printf("enter value for item %d: ",i+1);
         scanf("%d", &values[i]);
         //printf("enter weight for item %d: ",i+1);
