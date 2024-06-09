@@ -31,7 +31,8 @@ void floydWarshall(int W[N][N], int D[N][N], int P[N][N]){
     }
     for(int i=0; i<N; i++) {
         for (int j = 0; j < N; j++) {
-            printf("%d ", D[i][j]);
+            if(D[i][j]<0) printf("%d ", D[i][j]);
+            else printf(" %d ", D[i][j]);
         }
         printf("\n");
     }
